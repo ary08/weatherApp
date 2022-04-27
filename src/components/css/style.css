@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background: #f3f2ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+html {
+  background: #eee;
+}
+
+.box {
+  width: 20vw;
+  height: 60vh;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+  background: #a5bbdd;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  min-width: 20rem;
+  min-height: 35rem;
+}
+
+.box::after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65%;
+  z-index: 4;
+}
+
+.location {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #d6de1f;
+}
+
+.temp {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.tempmin_max {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #57606f;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 90vw;
+    height: 80vh;
+  }
+
+  .info {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-height: 500px) {
+  .box {
+    height: 80vh;
+  }
+}
+
+.inputData {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.inputField {
+  width: 50%;
+  margin: auto;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  outline: none;
+  font-size: 2rem;
+  font-family: black;
+}
+
+.errorMsg {
+  text-align: center;
+  margin: 5rem auto;
+  font-size: 30px;
+  color: #d6de1f;
+}

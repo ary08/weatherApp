@@ -1,0 +1,103 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.main_div {
+  width: 100vw;
+  height: 100vw;
+  display: grid;
+  place-items: center;
+  background-color: hsl(216, 100%, 94%);
+}
+
+.center_div {
+  width: 300px;
+  height: 180px;
+  border-radius: 16px;
+  /* background-image: linear-gradient ( to right top,#52b6fe, #6154fe); */
+  background-image: linear-gradient(to bottom right, #52b6fe, #6154fe);
+  padding: 30px;
+  position: relative;
+  /* box-shadow: ; */
+}
+.center_div.top_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+input,
+select {
+  border: 0;
+  border-radius: 0;
+  outline: none;
+}
+
+.credit-card {
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+}
+
+.front {
+  top: 100px;
+  left: 100px;
+  z-index: 2;
+}
+
+input {
+  background: darken(#3d89b8, 10%);
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+}
+select {
+  background: darken(#3d89b8, 10%);
+  border-radius: 4px;
+  border: 1px solid gray;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+}
+input {
+  float: right;
+  background: transparent;
+  border-radius: 4px;
+  color: black;
+  font-size: 26px;
+}
+
+.card_numbers {
+  margin-top: 15px;
+}
+
+.sub {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: point;
+}
